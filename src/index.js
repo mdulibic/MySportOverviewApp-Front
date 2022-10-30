@@ -10,7 +10,7 @@ ReactDOM.render(
         <Auth0Provider
             domain="dev-wvlur3vzqojbl0x0.us.auth0.com"
             clientId="c84YkIEUa9EJHkFduIlx0GMGlXyVOoqB"
-            redirectUri="http://localhost:3000/home"
+            redirectUri="https://my-sport-overview-app-front.herokuapp.com/home"
         >
             <App />
         </Auth0Provider>

@@ -26,13 +26,14 @@ function HomePage() {
     const roundsGenerator = (round) => {
         return (<div>
             <h3 style={{margin: "1rem", textAlign: "left", color: "#FFFFFF"}}>{round.name}</h3>
+            {isAuthenticated ? (
             <Button
                 style={{margin: "0.3rem", backgroundColor: "#FF6587"}}
                 onClick={() => navigate("/comments", {state: {round: round}})}
                 variant="contained"
             >
                 Comments
-            </Button>
+            </Button>):(<div></div>)}
             {round.results.length !== 0 ? (<Table striped bordered hover size="sm" style={tableStyle}>
                 <thead style={{backgroundColor: "#54428E", color: "#FFFFFF"}}>
                 <tr>
